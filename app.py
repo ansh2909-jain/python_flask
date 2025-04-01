@@ -6,7 +6,7 @@ from forms.register_form import RegisterForm
 from models.users import init_models, User, db
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key_here'
+app.config['SECRET_KEY'] = '90ff6a0e00db3223b37637e67eab4442'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db.init_app(app)
 
@@ -66,4 +66,4 @@ def register():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
